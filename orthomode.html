@@ -1,56 +1,196 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orthomode WR159</title>
 
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #0b0f19; color: white; }
-    header { text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #111827, #1e3a8a); }
-    header h1 { margin: 0; font-size: 48px; }
-    .container { max-width: 1000px; margin: 40px auto; padding: 30px; background: #111827; border-radius: 15px; }
-    h2 { color: #60a5fa; }
-    p { line-height: 1.8; color: #e5e7eb; }
-    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-    th { background: #2563eb; color: white; padding: 14px; text-align: left; }
-    td { padding: 14px; border-bottom: 1px solid #1f2937; }
-    tr:nth-child(even) { background: #1a2235; }
-    tr:hover { background: #24304d; }
-    .button { display: inline-block; margin-top: 30px; padding: 14px 28px; background: #2563eb; color: white; text-decoration: none; border-radius: 12px; font-weight: bold; }
-    footer { text-align: center; padding: 25px; color: #94a3b8; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0f19;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #111827, #1e3a8a);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+    }
+
+    header p {
+      color: #cbd5e1;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #111827;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      color: #60a5fa;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #e5e7eb;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th {
+      background: #2563eb;
+      color: white;
+      padding: 14px;
+      text-align: left;
+    }
+
+    td {
+      padding: 14px;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    tr:nth-child(even) {
+      background: #1a2235;
+    }
+
+    tr:hover {
+      background: #24304d;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      margin-right: 10px;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #94a3b8;
+    }
   </style>
+
 </head>
 
 <body>
 
 <header>
   <h1>Orthomode WR159</h1>
+  <p>Solution hyperfréquence bande C</p>
 </header>
 
 <div class="container">
+
   <h2>Présentation</h2>
 
   <p>
-    Le diviseur 8 voies Camelia est conçu pour la distribution de signaux
-    hyperfréquences en bande C. Basé sur une architecture guide d'onde WR159,
-    il assure une répartition homogène de la puissance vers huit sorties tout
-    en conservant de faibles pertes d'insertion et une excellente adaptation.
+    L'Orthomode WR159 Camelia est un composant hyperfréquence conçu pour
+    exploiter deux polarisations orthogonales en bande C. Il dispose de deux
+    entrées WR159 indépendantes et d'une sortie destinée à l'alimentation
+    directe d'une antenne horn.
+  </p>
+
+  <p>
+    Sa conception permet une séparation efficace des signaux, de faibles pertes
+    d'insertion et une excellente adaptation pour les applications radar,
+    télécommunications et antennes professionnelles.
   </p>
 
   <h2>Caractéristiques techniques</h2>
 
   <table>
-    <tr> <th>Paramètre</th> <th>Valeur</th> </tr> <tr> <td>Bande de fréquence</td> <td>WR159 (4,90 GHz – 7,05 GHz)</td> </tr> <tr> <td>Entrées</td> <td>2 × WR159</td> </tr> <tr> <td>Sortie</td> <td>Interface antenne horn</td> </tr> <tr> <td>Type</td> <td>Orthomode Transducer (OMT)</td> </tr> <tr> <td>S11</td> <td>&lt; -15 dB</td> </tr> <tr> <td>Perte d'insertion</td> <td>0,1 dB typique</td> </tr> <tr> <td>Polarisations</td> <td>Orthogonales (Horizontale / Verticale)</td> </tr> <tr> <td>Technologie</td> <td>Guide d'onde WR159</td> </tr> <tr> <td>Applications</td> <td>Antennes horn, télécommunications, radar</td> </tr>
+
+    <tr>
+      <th>Paramètre</th>
+      <th>Valeur</th>
+    </tr>
+
+    <tr>
+      <td>Bande de fréquence</td>
+      <td>WR159 (4,90 GHz – 7,05 GHz)</td>
+    </tr>
+
+    <tr>
+      <td>Entrées</td>
+      <td>2 × WR159</td>
+    </tr>
+
+    <tr>
+      <td>Sortie</td>
+      <td>Interface antenne horn</td>
+    </tr>
+
+    <tr>
+      <td>Type</td>
+      <td>Orthomode Transducer (OMT)</td>
+    </tr>
+
+    <tr>
+      <td>S11</td>
+      <td>&lt; -15 dB</td>
+    </tr>
+
+    <tr>
+      <td>Perte d'insertion</td>
+      <td>0,1 dB typique</td>
+    </tr>
+
+    <tr>
+      <td>Polarisations</td>
+      <td>Orthogonales (Horizontale / Verticale)</td>
+    </tr>
+
+    <tr>
+      <td>Technologie</td>
+      <td>Guide d'onde WR159</td>
+    </tr>
+
+    <tr>
+      <td>Applications</td>
+      <td>Antennes horn, télécommunications, radar</td>
+    </tr>
+
   </table>
 
   <a class="button" href="solutionhyper.html">
-    🏠 Retour aux solutions hyperfréquences
+    🛰️ Retour aux solutions hyperfréquences
   </a>
-</div>
- <a class="button" href="index.html">
+
+  <a class="button" href="index.html">
     🏠 Retour au menu
   </a>
+
 </div>
+
 <footer>
   © 2026 Camelia — Tous droits réservés
 </footer>
