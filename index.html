@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Camelia</title>
-  <link rel="icon" type="image/png" href="ChatGPT Image 2 juin 2026, 04_49_44.png">
+  <link rel="icon" type="image/png" href="logo.png">
 
   <style>
     body {
@@ -14,7 +14,7 @@
     }
 
     header {
-      padding: 30px;
+      padding: 40px 20px;
       text-align: center;
       background: linear-gradient(135deg, #111827, #1e3a8a);
     }
@@ -32,6 +32,20 @@
     .slogan {
       color: #cbd5e1;
       font-size: 18px;
+    }
+
+    nav a, .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+
+    nav a:hover, .button:hover {
+      background: #3b82f6;
     }
 
     section {
@@ -62,12 +76,18 @@
 <body>
 
   <header>
-    <img src="logo.png" alt="Logo de l'entreprise">
-    <h1>Mon Entreprise</h1>
+    <img src="logo.png" alt="Logo Camelia">
+    <h1>Camelia</h1>
     <p class="slogan">Solutions électroniques avancées</p>
+
+    <nav>
+      <a href="#activites">Activités</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
+  <section id="activites">
     <h2>Nos activités</h2>
     <ul>
       <li>Conception électronique</li>
@@ -77,22 +97,24 @@
     </ul>
   </section>
 
-  <section>
+  <section id="apropos">
     <h2>À propos</h2>
     <p>
-      Nous développons des solutions technologiques pour des environnements
+      Camelia développe des solutions technologiques pour des environnements
       exigeants et des applications critiques.
     </p>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contact</h2>
     <p>Email : contact@entreprise.fr</p>
     <p>Téléphone : +33 X XX XX XX XX</p>
+
+    <a class="button" href="mailto:contact@entreprise.fr">Nous contacter</a>
   </section>
 
   <footer>
-    © 2026 Mon Entreprise — Tous droits réservés
+    © 2026 Camelia — Tous droits réservés
   </footer>
 
 </body>
