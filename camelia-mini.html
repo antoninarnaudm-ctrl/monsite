@@ -2,18 +2,139 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Camelia - Mini</title>
+  <title>Camelia - C</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0f19;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #111827, #1e3a8a);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 50px;
+    }
+
+    header p {
+      color: #cbd5e1;
+      font-size: 18px;
+      margin-top: 15px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 35px;
+      background: #111827;
+      border-radius: 18px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      color: #60a5fa;
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #e5e7eb;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .features li {
+      background: #1a2235;
+      margin: 12px 0;
+      padding: 15px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .features li:hover {
+      transform: translateX(10px);
+      background: #24304d;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+    }
+  </style>
 </head>
-<body style="background:#0b0f19;color:white;font-family:Arial;text-align:center;">
 
-<h1>Camelia - Mini</h1>
+<body>
 
-<p>
-Version compacte de la gamme Camelia.
-Brouillage de drone jusqu'a 500m sur batterie.
-</p>
+<header>
+  <h1>Camelia - C</h1>
+  <p>Solution large bande en bande C miniature pour applications professionnelles</p>
+</header>
 
-<a href="index.html">← Retour à l'accueil</a>
+<div class="container">
+
+  <h2>Présentation</h2>
+
+  <p>
+    Camelia - C est une solution large bande en bande C conçue pour les
+    applications pour drones, offrant une bulle de protection de 500m.
+  </p>
+
+  <p>
+    Grâce à son architecture compacte et modulaire, elle offre une intégration
+    simplifiée et un déploiement rapide sur le terrain. Son format miniaturisé permet son emport par un soldat sous toutes conditions.
+  </p>
+
+  <h2>Caractéristiques principales</h2>
+
+  <ul class="features">
+    <li>📡 Fonctionnement en bande C</li>
+    <li>📶 Architecture large bande</li>
+    <li>✈️ Masse inférieure à 2 Kg</li>
+    <li>⚡ Portable par un soldat</li>
+    <li>🧩 Conception modulaire et évolutive</li>
+    <li>🚁 Compatible avec les applications drones</li>
+  </ul>
+
+  <a class="button" href="index.html">
+    🏠 Retour à l'accueil
+  </a>
+
+</div>
+
+<footer>
+  © 2026 Camelia — Tous droits réservés
+</footer>
 
 </body>
 </html>
