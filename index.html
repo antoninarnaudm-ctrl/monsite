@@ -34,7 +34,11 @@
       font-size: 18px;
     }
 
-    nav a, .button {
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a, .dropbtn, .button {
       display: inline-block;
       margin: 10px;
       padding: 12px 20px;
@@ -42,10 +46,47 @@
       color: white;
       text-decoration: none;
       border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
     }
 
-    nav a:hover, .button:hover {
+    nav a:hover, .dropbtn:hover, .button:hover {
       background: #3b82f6;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      left: 10px;
+      top: 55px;
+      background: #111827;
+      min-width: 220px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      z-index: 999;
+      overflow: hidden;
+    }
+
+    .dropdown-content a {
+      display: block;
+      margin: 0;
+      border-radius: 0;
+      background: #111827;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background: #1f2937;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
 
     section {
@@ -70,51 +111,6 @@
       padding: 25px;
       color: #94a3b8;
     }
-
-    .dropdown {
-  position: relative;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.dropbtn {
-  background: #2563eb;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.dropbtn:hover {
-  background: #3b82f6;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background: #111827;
-  min-width: 220px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: white;
-  padding: 12px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background: #1f2937;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
   </style>
 </head>
 
@@ -127,20 +123,18 @@
 
     <nav>
       <a href="#activites">Activités</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Nos solutions ▼</button>
+        <div class="dropdown-content">
+          <a href="#camelia-c">Camelia - C</a>
+          <a href="#camelia-mini">Camelia - Mini</a>
+        </div>
+      </div>
+
       <a href="#apropos">À propos</a>
       <a href="#contact">Contact</a>
     </nav>
-    <nav>
-  <div class="dropdown">
-    <button class="dropbtn">Nos solutions ▼</button>
-    <div class="dropdown-content">
-      <a href="#">Camelia - C</a>
-      <a href="#">Camelia - Mini</a>
-    </div>
-  </div>
-</nav>
-
-    
   </header>
 
   <section id="activites">
@@ -151,6 +145,16 @@
       <li>Télécommunications</li>
       <li>Recherche et développement</li>
     </ul>
+  </section>
+
+  <section id="camelia-c">
+    <h2>Camelia - C</h2>
+    <p>Solution électronique avancée pour applications professionnelles.</p>
+  </section>
+
+  <section id="camelia-mini">
+    <h2>Camelia - Mini</h2>
+    <p>Version compacte de la solution Camelia.</p>
   </section>
 
   <section id="apropos">
