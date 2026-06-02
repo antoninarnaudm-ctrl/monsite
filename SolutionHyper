@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Camelia - C</title>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0f19;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #111827, #1e3a8a);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 50px;
+    }
+
+    header p {
+      color: #cbd5e1;
+      font-size: 18px;
+      margin-top: 15px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 35px;
+      background: #111827;
+      border-radius: 18px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      color: #60a5fa;
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #e5e7eb;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .features li {
+      background: #1a2235;
+      margin: 12px 0;
+      padding: 15px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .features li:hover {
+      transform: translateX(10px);
+      background: #24304d;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Camelia - C</h1>
+  <p>Solution large bande en bande C pour applications professionnelles</p>
+</header>
+
+<div class="container">
+
+  <h2>Présentation</h2>
+
+  <p>
+    Camelia propose des solutions hyperfréquences innovantes et lowcost..
+  </p>
+
+  <p>
+    Grâce à son architecture compacte et modulaire, elle offre une intégration
+    simplifiée et un déploiement rapide sur le terrain. Son format flyaway
+    permet un transport aisé et une mise en service rapide dans des
+    environnements exigeants.
+  </p>
+
+  <h2>Caractéristiques principales</h2>
+
+  <ul class="features">
+    <li>📡 Fonctionnement en bande C</li>
+    <li>📶 Architecture large bande</li>
+    <li>✈️ Format flyaway transportable</li>
+    <li>⚡ Déploiement rapide sur le terrain</li>
+    <li>🧩 Conception modulaire et évolutive</li>
+    <li>🚁 Compatible avec les applications drones</li>
+    <li>📡 Adapté aux systèmes radar</li>
+    <li>🌐 Adapté aux infrastructures de télécommunications</li>
+    <li>📦 Faible encombrement</li>
+    <li>🛡️ Haute fiabilité opérationnelle</li>
+  </ul>
+
+  <a class="button" href="index.html">
+    🏠 Retour à l'accueil
+  </a>
+
+</div>
+
+<footer>
+  © 2026 Camelia — Tous droits réservés
+</footer>
+
+</body>
+</html>
